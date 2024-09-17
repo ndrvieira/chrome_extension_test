@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Phone Icon Injector",
+  "version": "1.0",
+  "description": "Inject phone icons on pages that contain phone numbers and adds a call button to it.",
+  "action": {
+    "default_title": "Action Button",
+    "default_icon": {
+      "16": "favicon.ico",
+      "48": "logo192.png",
+      "128": "logo512.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "favicon.ico",
+    "48": "logo192.png",
+    "128": "logo512.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "asset-manifest.json",
+        "static/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
