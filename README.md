@@ -28,3 +28,4 @@ This project is a chrome extension that has the goal to insert phone icons next 
 1. Create a popup page with a reload button on it that would re-scan the page to re-add the phone icons or add more functionalities.
 2. Add unit tests
 3. Improve the phoneNumberInjector code, maybe make it a class and when it detects the phone number is already added breaks the whole operation and not just the DOM update like it is now.
+4. Add linter
